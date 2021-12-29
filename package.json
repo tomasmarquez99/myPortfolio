@@ -1,0 +1,22 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "My portfolio for the web",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomasmarquez99/myPortfolio.git"
+  },
+  "author": "Tomas Marquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomasmarquez99/myPortfolio/issues"
+  },
+  "homepage": "https://github.com/tomasmarquez99/myPortfolio#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
