@@ -6,7 +6,8 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tomas Marquez - Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
@@ -19,8 +20,8 @@
     </div>
     <div class="container col-5 justify-content-end">
       <a class="nav-link" style="color: black" href="index.html">Home</a>
-            <a class="nav-link" style="color: black" href="proyects.html">Proyects</a>
-            <a class="nav-link" style="color: black" href="#contact">Contact</a>
+      <a class="nav-link" style="color: black" href="proyects.html">Proyects</a>
+      <a class="nav-link" style="color: black" href="#contact">Contact</a>
 
     </div>
   </nav>
@@ -84,19 +85,19 @@
     <form id="contact" action="/contact-me" method="post">
       <div class="form-group m-3">
         <label for="Name">Introduce your name:</label>
-        <input type="text" class="form-control" id="name" placeholder="Name">
+        <input type="text" class="form-control" name='name' id="name" placeholder="Name">
       </div>
       <div class="form-group m-3">
         <label for="Name">Email address:</label>
-      <input type="email" class="form-control" id="email" placeholder="Email">
-    </div>
-    <div class="form-group m-3">
-      <label for="message">Message</label>
-    <textarea class="form-control" id="message" rows="3"></textarea>
-  </div>
-  <div class="form-group m-3 text-center">
-<button class="btn btn-outline-secondary" type="submit">Send</button>
-</div>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+      </div>
+      <div class="form-group m-3">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+      </div>
+      <div class="form-group m-3 text-center">
+        <button id="submitBtn" class="btn btn-outline-secondary" type="submit">Send</button>
+      </div>
 
 
 
@@ -112,7 +113,7 @@
 
 
 
-  <script src="./index.js"></script>
+  <script src="server.js"></script>
   <script src="js/bootstrap.bundle.js"></script>
 </body>
 
