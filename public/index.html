@@ -34,6 +34,8 @@
           I'm studying to
           became a Back End Developer.</h2>
       </div>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1213993883074457"
+     crossorigin="anonymous"></script>
     </div>
     <br>
 
@@ -81,38 +83,65 @@
       <div class="col-2"></div>
     </div>
     <hr>
-    <h3 class="text-center">Contact me:</h3>
-    <form id="contact" action="/contact-me" method="post">
-      <div class="form-group m-3">
-        <label for="Name">Introduce your name:</label>
-        <input type="text" class="form-control" name='name' id="name" placeholder="Name">
-      </div>
-      <div class="form-group m-3">
-        <label for="Name">Email address:</label>
-        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-      </div>
-      <div class="form-group m-3">
-        <label for="message">Message</label>
-        <textarea class="form-control" id="message" name="message" rows="3"></textarea>
-      </div>
-      <div class="form-group m-3 text-center">
-        <button id="submitBtn" class="btn btn-outline-secondary" type="submit">Send</button>
-      </div>
+    <div class="row">
+      <h3 class="text-center">Contact me:</h3>
+      <form id="contact" action="/contact-me" method="post">
+        <div class="form-group m-3">
+          <label for="Name">Introduce your name:</label>
+          <input type="text" class="form-control" name='name' id="name" placeholder="Name">
+        </div>
+        <div class="form-group m-3">
+          <label for="Name">Email address:</label>
+          <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+        </div>
+        <div class="form-group m-3">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+        </div>
+        <div class="form-group m-3 text-center">
+          <button id="submitBtn" class="btn btn-outline-secondary" type="submit">Send</button>
+        </div>
 
 
 
 
-    </form>
+      </form>
+    </div>
     <hr>
+    <footer>
+
+      <div class="row mt-5 p-4" style="background-color: rgba(31, 31, 31, 0.932);">
+
+        <div class="col-3">
+          <h5 class="text-center" style="color: rgb(231, 231, 231);">Redes sociales</h3>
+            <div class="row">
+              <div class="col-4"></div>
+              <div class="col-2">
+                <a class="m-2" style="color: rgb(231, 231, 231);" href="http://www.linkedin.com/in/tomasmarquez99"> <i
+                    class="fa fa-linkedin"></i></a>
+              </div>
+              <div class="col-2">
+                <a class="m-2" style="color: rgb(231, 231, 231);" href="https://github.com/tomasmarquez99"> <i
+                    class="fa fa-github"></i></a>
+              </div>
+            </div>
+        </div>
+        <div class="col-6"></div>
+        <div class="col-3">
+          <a class="m-2 nav-link" style="color: rgb(231, 231, 231);">btomasmarquez@gmail.com</a>
+        </div>
 
 
+      </div>
 
-
-
+    </footer>
   </div>
 
-
-
+  <script>
+    document.getElementById("submitBtn").addEventListener("click", () => {
+      alert('Formulario enviado!');
+    });
+  </script>
   <script src="server.js"></script>
   <script src="js/bootstrap.bundle.js"></script>
 </body>

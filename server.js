@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-  res.sendFile(express.static(__dirname, 'index.html'))
+  res.redirect("/index.html")
 })
 
 //app.get('/contact-me', (request, response)=>{
@@ -21,9 +21,10 @@ app.get('/', (req, res) => {
 
 
 app.post('/contact-me', urlencodedParser, (request, response) =>{
-  response.send('Formulario enviado');
-  
+response.redirect('/')
   console.log(request.body);
+  
+
 
   let transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -47,6 +48,7 @@ app.post('/contact-me', urlencodedParser, (request, response) =>{
         console.log('Email sent')
     }
   })
+  
 })
 
 
