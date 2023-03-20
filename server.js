@@ -30,7 +30,7 @@ response.redirect('/')
     service: 'gmail',
   auth: {
     user: 'tomasmarquezxyz@gmail.com',
-    pass: 'tomaspenarol1891'
+    pass: EMAIL_PASSWORD
   }
 });
   
