@@ -14,6 +14,8 @@ app.get('/', (req, res) => {
   res.redirect("/index.html")
 })
 
+const emailKEY = process.env.EMAIL_PASSWORD
+
 //app.get('/contact-me', (request, response)=>{
   //response.render('contact-me')
 //})
@@ -30,7 +32,7 @@ response.redirect('/')
     service: 'gmail',
   auth: {
     user: 'tomasmarquezxyz@gmail.com',
-    pass: EMAIL_PASSWORD
+    pass: emailKEY
   }
 });
   
