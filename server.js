@@ -2,8 +2,9 @@ const express = require('express');
 const bodyParser = require("body-parser")
 const morgan = require('morgan');
 const nodemailer = require('nodemailer');
-const app = express()
-const urlencodedParser = bodyParser.urlencoded({ extended: false })
+const app = express();
+const urlencodedParser = bodyParser.urlencoded({ extended: false });
+const path = require('path');
 
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}))
@@ -22,10 +23,7 @@ app.get('/contact-me', (request, response)=>{
 })
 */
 
-console.log(emailKEY)
-
-
-app.post('/contact-me', urlencodedParser, (request, response) =>{
+app.post('/contact-me', (request, response) =>{
 response.redirect('/')
   console.log(request.body);
   
