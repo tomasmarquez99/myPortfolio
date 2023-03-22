@@ -23,7 +23,7 @@ app.get('/contact-me', (request, response)=>{
 })
 */
 
-app.post('/contact-me', (request, response) =>{
+app.post('myPortfolio/public/contact-me', (request, response) =>{
 response.redirect('/')
   console.log(request.body);
   
