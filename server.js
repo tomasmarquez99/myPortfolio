@@ -16,10 +16,13 @@ app.get('/', (req, res) => {
 
 const emailKEY = process.env.EMAIL_PASSWORD
 
-//app.get('/contact-me', (request, response)=>{
-  //response.render('contact-me')
-//})
+/*
+app.get('/contact-me', (request, response)=>{
+  response.render('contact-me')
+})
+*/
 
+console.log(emailKEY)
 
 
 app.post('/contact-me', urlencodedParser, (request, response) =>{
@@ -30,6 +33,8 @@ response.redirect('/')
 
   let transporter = nodemailer.createTransport({
     service: 'gmail',
+    user: 'smtp.gmail.com',
+    port: 465,
   auth: {
     user: 'tomasmarquezxyz@gmail.com',
     pass: emailKEY
