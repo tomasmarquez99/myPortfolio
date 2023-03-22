@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My portfolio for the web",
   "main": "server.js",
-  "homepage" : "https://tomasmarquez99.github.io/myPortfolio/public/index.html",
+  "homepage" : "https://tomasmarquez99.github.io/myPortfolio/public/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
